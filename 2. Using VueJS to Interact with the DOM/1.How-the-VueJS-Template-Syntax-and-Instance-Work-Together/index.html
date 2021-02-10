@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World VueJS</title>
+</head>
+<body>
+    <div id="app">
+        <p>This is the title: {{ title }}</p>
+        <p>This is the method sayHello result: {{ sayHello() }}</p>
+    </div>
+
+    <script src="./vue.min.js"></script>
+    <script>
+        let vue = new Vue({
+            el: '#app',
+            data: {
+                title: 'Hello World VueJS',
+            },
+            methods: {
+                sayHello() {
+                    return 'Hello!';
+                }
+            } 
+        });
+    </script>
+</body>
+</html>
